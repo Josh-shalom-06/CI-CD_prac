@@ -14,4 +14,9 @@ jobs:
           python-version: "3.12"
 
       - run: pip install -r req.txt
-      - run: pytest
+
+      - name: Run program
+        run: python hello.py
+        
+      - name: Run Tests
+        run: pytest
